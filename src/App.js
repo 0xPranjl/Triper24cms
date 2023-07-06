@@ -96,19 +96,26 @@ function ValidateEmail(mail)
 
   return (
     <>
-   <h1>Welcome to triper</h1>
+   <h1 className="heading" data-aos="zoom-in-left">Welcome to triper24</h1>
    {!school?<>
-   <input placeholder="Institution code" onChange={(e)=>{
+    <div className="input" data-aos="zoom-in-left">
+   Enter your: <input placeholder="   Institution code" onChange={(e)=>{
     console.log(e.target.value);
     setcode(e.target.value);
     }}></input>
+    </div>
     <br></br>
+    <div className="login">
     <button onClick={()=>{
       getschool(code);
-    }}>login</button>
+    }}><div className="log" data-aos="zoom-in-left">login</div></button>
+    </div>
     </>:<>
+    <div className="welcome" data-aos="zoom-in-left">
     <h1>Welcome {school}</h1>
-    <Select
+    </div>
+    <div className="bus" data-aos="zoom-in-left"><h3>select bus:</h3></div>
+    <Select className="select"
         defaultValue={selectedOption}
         onChange={(e)=>{
           sveh(e.value);
@@ -116,14 +123,19 @@ function ValidateEmail(mail)
         options={vehicle}
       />
      <br></br>
-       <textarea onChange={(e)=>{
+     <div className="email" data-aos="zoom-in-left">
+     <h3>Enter email:</h3>  <textarea placeholder="Enter your email" onChange={(e)=>{
     console.log(e.target.value);
     semail(e.target.value);
-    }}></textarea>
+    }} />
+     </div>
     <br></br>
+    <div className="mail" data-aos="zoom-in-left">
        <button onClick={async()=>{
          fet();
-       }}>add emails</button><br></br>
+       }}>add emails</button>
+       </div>
+       <br></br>
 
        <button onClick={()=>{
        }}>view users</button>
