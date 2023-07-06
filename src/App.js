@@ -137,9 +137,9 @@ function ValidateEmail(mail)
        </div>
        <br></br>
 
-       <button onClick={()=>{
+       {/* <button onClick={()=>{
        }}>view users</button>
-    
+     */}
     
     </>}
     </>
