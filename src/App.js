@@ -5,7 +5,6 @@ import { useState } from "react";
 import Select from 'react-select'; 
 
 
-
 const client = new Client();
 client
    .setEndpoint('https://cloud.appwrite.io/v1')
@@ -98,23 +97,23 @@ function ValidateEmail(mail)
     <>
    <h1 className="heading" data-aos="zoom-in-left">Welcome to triper24</h1>
    {!school?<>
-    <div className="input" data-aos="zoom-in-left">
-   Enter your: <input placeholder="   Institution code" onChange={(e)=>{
+    
+   <div className="enteryour">Enter your:</div> <input className="input" data-aos="zoom-in-left"  placeholder="  Institution code" onChange={(e)=>{
     console.log(e.target.value);
     setcode(e.target.value);
     }}></input>
-    </div>
+    
     <br></br>
-    <div className="login">
-    <button onClick={()=>{
+    
+    <button className="login" data-aos="zoom-in-left" onClick={()=>{
       getschool(code);
-    }}><div className="log" data-aos="zoom-in-left">login</div></button>
-    </div>
+    }}>login</button>
+  
     </>:<>
     <div className="welcome" data-aos="zoom-in-left">
     <h1>Welcome {school}</h1>
     </div>
-    <div className="bus" data-aos="zoom-in-left"><h3>select bus:</h3></div>
+    <div className="bus" data-aos="zoom-in-left"> select bus: </div>
     <Select className="select"
         defaultValue={selectedOption}
         onChange={(e)=>{
@@ -122,19 +121,20 @@ function ValidateEmail(mail)
         }}
         options={vehicle}
       />
+      
      <br></br>
      <div className="email" data-aos="zoom-in-left">
-     <h3>Enter email:</h3>  <textarea placeholder="Enter your email" onChange={(e)=>{
+     <h3>Enter email:</h3>  <textarea  placeholder="Enter your email" onChange={(e)=>{
     console.log(e.target.value);
     semail(e.target.value);
     }} />
      </div>
     <br></br>
-    <div className="mail" data-aos="zoom-in-left">
-       <button onClick={async()=>{
+    
+       <button className= "mail"  onClick={async()=>{
          fet();
-       }}>add emails</button>
-       </div>
+       }}> add email </button> 
+       
        <br></br>
 
        {/* <button onClick={()=>{
@@ -145,5 +145,6 @@ function ValidateEmail(mail)
     </>
   );
 }
+
 
 export default App;
