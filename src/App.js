@@ -123,8 +123,9 @@ function ValidateEmail(mail)
       />
       
      <br></br>
+     <div className="emailname" data-aos="zoom-in-right" >Enter email:</div>
      <div className="email" data-aos="zoom-in-left">
-     <h3>Enter email:</h3>  <textarea  placeholder="Enter your email" onChange={(e)=>{
+      <textarea  placeholder="Enter your email" onChange={(e)=>{
     console.log(e.target.value);
     semail(e.target.value);
     }} />
