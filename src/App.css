@@ -41,10 +41,10 @@
     font-size: 20px;
 }
 .email{
-    margin-left: 650px;
-    width:100px;
+    margin-left: 800px;
+    width:200px;
     font-size: 20px;
-    margin-top: 30px;
+    margin-top: -30px;
     
 }
 .bus{
@@ -58,11 +58,17 @@ font-size: 20px;
 border: 2px solid gray;
 width: 500px;
 margin-top: 30px;
+
 }
 .enteryour{
     font-size: 20px;
     margin-left: 760px;
     margin-top: 100px;
+}
+.emailname{
+    margin-left: 650px;
+    font-size: 20px;
+    margin-top: 20px;
 }
 
 
@@ -112,9 +118,10 @@ margin-top: 30px;
         font-size: 20px;
     }
     .email{
-        margin-left: 20px;
+        margin-left: 150px;
         width:200px;
         font-size: 15px;
+       
         
     }
     .bus{
@@ -135,6 +142,11 @@ margin-top: 30px;
     margin-left: 5px;
     margin-top:50px;
   } 
+  .emailname{
+    font-size: 20px;
+    margin-left:10px;
+    margin-top: 20px;
+  }
  
     
     
